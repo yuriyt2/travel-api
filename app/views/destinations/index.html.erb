@@ -1,0 +1,9 @@
+<h2>Destinations</h2>
+<ul>
+<%@destinations.each do |d|%>
+<li style="display:inline-block;margin-right:10px;">
+ <h3> <%=d.name%> </h3>
+ <%=image_tag d.img_url, :style => "width:90px"%>
+</li>
+ <%end%>
+</ul>

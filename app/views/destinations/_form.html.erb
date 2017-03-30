@@ -1,0 +1,13 @@
+<%=form_for @destination do |f|%>
+<%=f.label ("Name:")%>
+<%=f.text_field :name%><br>
+<%=f.label ("Description:")%>
+<%=f.text_area :description%><br>
+<%=f.label ("Image URL:")%>
+<%=f.text_field :img_url%><br>
+<%=f.label ("Latitude:")%>
+<%=f.number_field :latitude, class: :text_field, step: :any %><br>
+<%=f.label ("Longitude:")%>
+<%=f.number_field :longitude, class: :text_field, step: :any%><br>
+<%=f.submit "Submit"%>
+<%end%>
