@@ -15,8 +15,8 @@
 <%=f.label ("Longitude:")%>
 <%=f.number_field :longitude, step: :any%><br>
 <%=f.label ("You sure?")%>
-<input id="check-box" type="checkbox" name="" value="">
-<%=f.submit "Submit"%>
+<input id="check-box" type="checkbox" name="" value=""><br>
+<%=f.submit "Submit", class: :submit%>
 <%end%>
  <script type="text/javascript">
     $()
