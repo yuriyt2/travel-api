@@ -19,5 +19,12 @@
 <%=f.submit "Submit", class: :submit%>
 <%end%>
  <script type="text/javascript">
-    $()
+    $(".submit").prop("disabled",true);
+    $("#check-box").change(function(){
+      if ($("#check-box").is(':checked')) {
+        $(".submit").prop("disabled",false);
+      }else{
+        $(".submit").prop("disabled",true);
+      }
+    })
  </script>
