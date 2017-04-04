@@ -7,9 +7,7 @@ class ApplicationController < ActionController::Base
 
    def set_access_control_headers
      headers['Access-Control-Allow-Origin'] = '*'
-     headers['Access-Control-Allow-Methods'] = 'POST, PUT, GET, OPTIONS'
-     headers['Access-Control-Allow-Headers'] = '*'
-     headers['Access-Control-Max-Age'] = "1728000"
+     headers['Access-Control-Allow-Methods'] = 'GET'
    end
 
 
