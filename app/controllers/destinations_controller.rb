@@ -37,7 +37,7 @@ class DestinationsController < ApplicationController
   end
 
   def random
-    @destination = Destination.all.sample
+    @destination = Destination.all.shuffle
     render json: @destination
   end
 
