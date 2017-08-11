@@ -3,7 +3,7 @@
 <%@destinations.each do |d|%>
 <li style="display:inline-block;margin-right:10px;">
  <h5> <%=d.name%> </h5>
- <a href="<%=edit_destination_path(d)%>"><%=image_tag d.img_url, :style => "width:150px"%></a>
+ <a href="<%=edit_destination_path(d)%>"><%=image_tag d.img_url.split(",")[0], :style => "width:150px"%></a>
 </li>
  <%end%>
 </ul>
