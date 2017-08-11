@@ -2,8 +2,8 @@
 <ul>
 <%@destinations.each do |d|%>
 <li style="display:inline-block;margin-right:10px;">
- <h5 style="width:180"> <%=d.name%> </h5>
- <a href="<%=edit_destination_path(d)%>"><%=image_tag d.img_url.split(",")[0], :style => "width:180px;max-height:120px;"%></a>
+ <h6> <%=d.name%> </h6>
+ <a href="<%=edit_destination_path(d)%>"><%=image_tag d.img_url.split(",")[0], :style => "width:180px;max-height:120px;margin-right:10px"%></a>
 </li>
  <%end%>
 </ul>
