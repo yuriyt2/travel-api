@@ -5,17 +5,17 @@
 </script>
 <%=form_for @destination do |f|%>
 <%=f.label ("Name:")%>
-<%=f.text_field :name%><br>
+<%=f.text_field :name%><br><br>
 <%=f.label ("Description:")%>
-<%=f.text_area :description%><br>
+<%=f.text_area :description%><br><br>
 <%=f.label ("Image URL:")%>
-<%=f.text_field :img_url%><br>
+<%=f.text_field :img_url%><br><br>
 <%=f.label ("Latitude:")%>
-<%=f.number_field :latitude, step: :any %><br>
+<%=f.number_field :latitude, step: :any %><br><br>
 <%=f.label ("Longitude:")%>
-<%=f.number_field :longitude, step: :any%><br>
+<%=f.number_field :longitude, step: :any%><br><br>
 <%=f.label ("You sure?")%>
-<input id="check-box" type="checkbox" name="" value=""><br>
+<input id="check-box" type="checkbox" name="" value=""><br><br>
 <%=f.submit "Submit", class: :submit%>
 <%end%>
  <script type="text/javascript">
