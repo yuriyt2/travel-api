@@ -1,13 +1,6 @@
 // Place all the styles related to the Destinations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.new_destination {
-  input,textarea {
-    width: 25%;
-    margin-bottom: 1%;
-  }
-  margin-left: 5%;
-}
 
 input,textarea {
 	width:60%;
@@ -17,4 +10,5 @@ input,textarea {
 label {
 	width:15%;
 	display:inline-block;
+	margin-right:2%;
 }
