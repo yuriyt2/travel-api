@@ -1,4 +1,5 @@
 class DestinationsController < ApplicationController
+  skip_before_action :authenticate, only: [:users]
 
   def index
     @destinations = Destination.all
