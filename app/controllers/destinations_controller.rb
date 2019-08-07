@@ -38,14 +38,14 @@ class DestinationsController < ApplicationController
   end
 
   def random
-    @destination = Destination.all.shuffle
-    render json: @destination
+    @destinations = Destination.all.shuffle
+    render json: @destinations
   end
 
   private
 
   def destination_params
-    params.require(:destination).permit(:name,:description,:img_url,:latitude,:longitude)
+    params.require(:destination).permit(:name,:description,:img_url,:latitude,:longitude,:country,:state)
   end
 
 
