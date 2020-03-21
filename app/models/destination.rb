@@ -1,2 +1,2 @@
-class Destination < ActiveRecord::Base
+class Destination < ApplicationRecord
 end
